@@ -26,14 +26,11 @@
 			},
 			"content": "<cross-domain-policy><allow-access-from domain=\"*\"/></cross-domain-policy>"
 		},
-		"/cc.swf": {},
-		"/go_full.swf": {},
-		"/favicon.ico": {},
-		"/char-default.png": {
-			"headers": {
-				"Content-Type": "image/png"
-			},
-			"content": ""
+		"cc.swf": {},
+		"go_full.swf": {},
+		"favicon.ico": {},
+		"char_default.png": {
+			"content": "{\"message\":\"REQUEST_HAS_EXPIRED\"}"
 		},
 		"yourvideos(.*)": {
 			"headers": {
