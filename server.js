@@ -3,12 +3,19 @@ const env = Object.assign(process.env,
 	require('./config'));
 
 const http = require('http');
+const chr = require('./character/redirect');
 const pmc = require('./character/premade');
 const chl = require('./character/load');
 const chs = require('./character/save');
+const mvu = require('./movie/upload');
 const asu = require('./asset/upload');
 const stl = require('./static/load');
 const stp = require('./static/page');
+const stc = require('./static/pagecc');
+const scc = require('./static/pageccbro');
+const scp = require('./static/page old');
+const slp = require('./static/page org');
+const slv = require('./static/pagelvp');
 const asl = require('./asset/load');
 const asL = require('./asset/list');
 const ast = require('./asset/thmb');
@@ -30,6 +37,7 @@ const functions = [
 	asl,
 	evt,
 	chl,
+	chr,
 	thl,
 	thL,
 	chs,
@@ -42,7 +50,13 @@ const functions = [
 	mvt,
 	tsv,
 	asu,
+	mvu,
 	stp,
+	stc,
+	scc,
+	scp,
+	slv,
+	slp,
 	stl,
 ];
 
