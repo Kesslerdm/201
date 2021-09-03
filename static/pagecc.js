@@ -199,7 +199,7 @@ if (self !== top) {
 <script>
 jQuery('#char_creator_client').flash({
    id: "char_creator",
-   swf: "https://josephcrosmanplays532.github.io/animation/414827163ad4eb60/cc.swf",
+   swf: "https://josephcrosmanplays532.github.io/animation/414827163ad4eb60vyondlegacyremastered/cc.swf",
    height: 600,
    width: 960,
 
