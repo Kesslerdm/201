@@ -440,7 +440,7 @@ function playerLoaded() {
 };
 jQuery('#playerdiv').flash({
     id: "Player",
-    swf: "https://josephcrosmanplays532.github.io/animation/66453a3ba2cc5e1b/player.swf",
+    swf: "https://josephcrosmanplays532.github.io/animation/414827163ad4eb60vyondlegacyremastered/player.swf",
     height: 349,
     width: 620,
     bgcolor: "#000000",
