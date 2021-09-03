@@ -313,7 +313,7 @@ function voiceBanner(bannerId) {
 
         var studio_data = {
             id: "Studio",
-            swf: "https://josephcrosmanplays532.github.io/animation/414827163ad4eb60vyondlegacyremastered/go_full.swf",
+            swf: "/static/animation/go_full.swf",
             width: "100%",
             height: "100%",
 
@@ -609,7 +609,7 @@ function loadLegacyPreview() {
     createPreviewPlayer("playerdiv", {
         height: 360,
         width: 640,
-        player_url: "https://ga.vyond.com/static/animation/player.swf",
+        player_url: "/static/animation/player.swf",
         quality: "medium"
     }, {
         movieOwner: "", movieOwnerId: "", movieId: "", ut: "-1",
@@ -618,7 +618,7 @@ function loadLegacyPreview() {
         autostart: "1", appCode: "go", is_slideshow: "0", originalId: "0", is_emessage: "0", isEmbed: "0", refuser: "",
         utm_source: "", uid: "", isTemplate: "1", showButtons: "0", chain_mids: "", showshare: "0", averageRating: "",
                     s3base: "https://s3.amazonaws.com/fs.goanimate.com/,https://assets.vyond.com/",
-                ratingCount: "", fb_app_url: "/", numContact: 0, isInitFromExternal: 1, storePath: "https://ga.vyond.com/static/store/<store>", clientThemePath: "https://ga.vyond.com/static/<client_theme>", animationPath: "https://ga.vyond.com/static/animation/",
+                ratingCount: "", fb_app_url: "/", numContact: 0, isInitFromExternal: 1, storePath: "/static/store/<store>", clientThemePath: "/static/<client_theme>", animationPath: "/static/animation/",
         startFrame: previewStartFrame
     });
     $('#previewPlayer').removeClass('using-h5');

@@ -1,9 +1,9 @@
 #!/bin/sh
 echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-echo Wrapper Provider
+echo Installing Vyond 2019...
 echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 npm install
 echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-echo Wrapper Provider Complete
+echo Install Complete! Starting Vyond 2019...
 echo = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 npm start
