@@ -29,7 +29,7 @@
 		"/cc.swf": {},
 		"/go_full.swf": {},
 		"/favicon.ico": {},
-		"/char-default\\.png": {
+		"char-default\\.png": {
 			"headers": {
 				"Content-Type": "image/png"
 			},
