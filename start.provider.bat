@@ -1,5 +1,5 @@
-@echo Installing Wrapper Online 7.0.1a
+@echo Installing Vyond 2019...
 npm install
-@echo Starting Wrapper Provider Complete
+@echo Starting Vyond 2019 Complete
 npm start
 pause
