@@ -23,7 +23,7 @@ module.exports = function (req, res, url) {
 
 	var attrs, params, title;
 	switch (url.pathname) {
-		case 'videomaker/full/': {
+		case '/videomaker/full/': {
 			let presave = query.movieId && query.movieId.startsWith('m') ? query.movieId :
 				`m-${fUtil[query.noAutosave ? 'getNextFileId' : 'fillNextFileId']('movie-', '.xml')}`;
 			title = 'The Video Maker from Vyond Remastered - Make a Video for YouTube!';
