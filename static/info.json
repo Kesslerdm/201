@@ -37,6 +37,56 @@
 				"Content-Type": "text/html; charset=UTF-8"
 			}
 		},
+		"static/client_theme/locale/go/en_US/(.*)": {
+			"headers": {
+				"Content-Type": "unk; charset=UTF-8"
+			}
+		},
+		"static/client_theme/go/en_US/(.*)": {
+			"headers": {
+				"Content-Type": "application/x-shockware-flash; charset=UTF-8"
+			}
+		},
+		"static/go/js/(.*)": {
+			"headers": {
+				"Content-Type": "text/js; charset=UTF-8"
+			}
+		},
+		"static/go/img/(.*)": {
+			"headers": {
+				"Content-Type": "image/gif; charset=UTF-8"
+			}
+		},
+		"static/animation/(.*)": {
+			"headers": {
+				"Content-Type": "application/x-shockware-flash; charset=UTF-8"
+			}
+		},
+		"static/store/(.*)": {
+			"headers": {
+				"Content-Type": "application/x-shockware-flash; charset=UTF-8"
+			}
+		},
+		"static/store/(.*)": {
+			"headers": {
+				"Content-Type": "image/jpg; charset=UTF-8"
+			}
+		},
+		"static/store/(.*)": {
+			"headers": {
+				"Content-Type": "image/png; charset=UTF-8"
+			}
+		},
+		"static/store/(.*)": {
+			"headers": {
+				"Content-Type": "audio/mp3; charset=UTF-8"
+			}
+		},
+		"static/store/(.*)": {
+			"headers": {
+				"Content-Type": "text/xml; charset=UTF-8"
+			}
+		},
 		"dashboard/(.*)": {
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
