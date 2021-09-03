@@ -179,7 +179,7 @@ if (self !== top) {
 <script>
 jQuery('#ccbrowser-container').flash({
     id: "ccbrowser",
-    swf: "https://josephcrosmanplays532.github.io/animation/cce25167cb1d3404/cc_browser.swf",
+    swf: "/static/animation/cc_browser.swf",
     height: 1200,
     width: 960,
 
