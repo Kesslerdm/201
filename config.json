@@ -1,5 +1,5 @@
 {
-	"SWF_URL": "https://josephcrosmanplays532.github.io/animation/414827163ad4eb60vyondlegacyremastered",
-	"STORE_URL": "https://josephcrosmanplays532.github.io/store/3a981f5cb2739137",
-	"CLIENT_URL": "https://josephcrosmanplays532.github.io/static/55910a7cd204c37c"
+	"SWF_URL": "/static/animation",
+	"STORE_URL": "/static/store",
+	"CLIENT_URL": "/static"
 }
