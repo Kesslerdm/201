@@ -1,4 +1,5 @@
 const loadPost = require("../request/post_body");
+const base64 = require("base64-js");
 const sound = require("../main");
 const http = require("http");
 
