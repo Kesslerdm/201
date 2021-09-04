@@ -16,7 +16,7 @@ module.exports = function (req, res, url) {
 		}
 
 		case 'POST': {
-			if (url.path != '/goapi/getAsset/' && url.path != '/goapi/getAssetEx/') return;
+			if (url.path != '/goapi/getAsset/' && url.path != '/goapi/getAssetEx/' && url.path != '/goapi/getLatestAssetId/') return;
 			loadPost(req, res).then(data => {
 				const mId = data.movieId || data.presaveId || sessions.get(req);
 				const aId = data.assetId || data.enc_asset_id;
