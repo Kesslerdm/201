@@ -11,7 +11,6 @@ const mvu = require('./movie/upload');
 const asu = require('./asset/upload');
 const sts = require('./starter/save');
 const str = require('./starter/load');
-const stm = require('./starter/meta');
 const stl = require('./static/load');
 const stp = require('./static/page');
 const stc = require('./static/pagecc');
@@ -38,7 +37,6 @@ const functions = [
 	mvL,
 	sts,
 	str,
-	stm,
 	pmc,
 	asl,
 	evt,
