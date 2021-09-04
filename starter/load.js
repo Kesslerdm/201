@@ -1,6 +1,5 @@
-const loadPost = require("../misc/post_body");
-const starter = require("../main");
-const http = require("http");
+const starter = require('./main');
+const base = Buffer.alloc(1, 0);
 
 /**
  * @param {http.IncomingMessage} req
@@ -8,15 +7,37 @@ const http = require("http");
  * @param {import("url").UrlWithParsedQuery} url
  * @returns {boolean}
  */
-module.exports = function (req, res, url) {
-	if (req.method != "POST" || (url.path != "/goapi/saveTemplate/")) return;
-	loadPost(req, res).then(([data, mId]) => {
-		const trigAutosave = data.is_triggered_by_autosave;
-		if (trigAutosave && (!data.starterId || data.noAutosave)) return res.end("0");
 
-		var body = Buffer.from(data.body_zip, "base64");
-		var thumb = data.thumbnail_large && Buffer.from(data.thumbnail_large, "base64");
-		starter.save(body, thumb, mId, data.presaveId).then((nId) => res.end("0" + nId));
-	});
-	return true;
-};
+module.exports = function (req, res, url) {
+	switch (req.method) {
+		case 'GET': {
+			const match = req.url.match(/\/starters\/([^.]+)(?:\.(zip|xml))?$/);
+			if (!match) return;
+
+			var id = match[1], ext = match[2];
+			switch (ext) {
+				case 'zip':
+					res.setHeader('Content-Type', 'application/zip');
+					starter.loadZip(id).then(v => { res.statusCode = 200, res.end(v) })
+						.catch(e => { res.statusCode = 404, res.end() })
+					break;
+				default:
+					res.setHeader('Content-Type', 'text/xml');
+					starter.loadXml(id).then(v => { res.statusCode = 200, res.end(v) })
+						.catch(e => { res.statusCode = 404, res.end() })
+			}
+			return true;
+		}
+
+		case 'POST': {
+			if (!url.path.startsWith('/goapi/getMovie/?')) return;
+			res.setHeader('Content-Type', 'application/zip');
+
+			starter.loadZip(url.query.starterId).then(b =>
+				res.end(Buffer.concat([base, b]))
+			).catch(e => res.end('1'));
+			return true;
+		}
+		default: return;
+	}
+}
