@@ -1,4 +1,4 @@
-const starter = require('./main');
+const starter = require('../main');
 module.exports = function (req, res, url) {
 	if (req.method != 'GET' || !url.path.startsWith('/meta')) return;
  starter.meta(url.path.substr(url.path.lastIndexOf('/') + 1))
