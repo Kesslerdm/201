@@ -17,9 +17,6 @@ module.exports = function (req, res) {
 			}
 		});
 
-		req.on('end', () => resolve(qs.parse(data)));
-		        var dict = qs.parse(data);
-			var mId = dict.movieId || dict.presaveId;
-			resolve([dict, mId]);
+		req.on('end', () => resolve(qs.parse(data)));  
 	});
 }
