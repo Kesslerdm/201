@@ -16,7 +16,7 @@ module.exports = function (req, res, url) {
 		if (trigAutosave && (!data.assetId || data.noAutosave)) return res.end("0");
 
 		var bytes = Buffer.from(data.bytes, "base64");
-		sound.save(body, mId, data.presaveId).then((nId) => res.end("0" + nId));
+		sound.save(bytes, mId, data.presaveId).then((nId) => res.end("0" + nId));
 	});
 	return true;
 };
