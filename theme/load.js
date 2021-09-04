@@ -13,7 +13,7 @@ module.exports = function (req, res, url) {
 		}
 		res.setHeader('Content-Type', 'application/zip');
 		fUtil.zippy(`${folder}/${theme}.xml`, 'theme.xml').then(b => res.end(b));
-		process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
+		process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '1';
 	});
 	return true;
 }
