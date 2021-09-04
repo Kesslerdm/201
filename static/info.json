@@ -20,12 +20,6 @@
 			},
 			"content": "111"
 		},
-		"/goapi/getLatestAssetId/": {
-			"headers": {
-				"Content-Type": "text/html"
-			},
-			"content": "1"
-		},
 		"/crossdomain.xml": {
 			"headers": {
 				"Content-Type": "text/x-cross-domain-policy"
