@@ -243,7 +243,7 @@ module.exports = function (req, res, url) {
 
 				const title = `[${voices[data.voice].desc}] ${data.text}`;
 				const id = asset.saveLocal(buffer, data.presaveId, '-tts.mp3');
-				res.end(`<response><asset><id>${id}</id><enc_asset_id>${id}</enc_asset_id><type>sound</type><subtype>tts</subtype><title>${title}</title><published>0</published><tags></tags><duration>${1e3 * duration}</duration><downloadtype>progressive</downloadtype><file>${id}</file></asset></response>`)
+				res.end(`<response><asset><id>${id}</id><enc_asset_id>${id}</enc_asset_id><type>sound</type><subtype>tts</subtype><title>${title}</title><published></published><tags></tags><duration>${1e3 * duration}</duration><downloadtype>progressive</downloadtype><file>${id}</file></asset></response>`)
 			});
 		});
 	});
