@@ -9,7 +9,7 @@ const chl = require('./character/load');
 const chs = require('./character/save');
 const mvu = require('./movie/upload');
 const asu = require('./asset/upload');
-const son = require('./sound/save');
+const sts = require('./starter/save');
 const stl = require('./static/load');
 const stp = require('./static/page');
 const stc = require('./static/pagecc');
@@ -34,7 +34,7 @@ const url = require('url');
 
 const functions = [
 	mvL,
-	son,
+	sts,
 	pmc,
 	asl,
 	evt,
