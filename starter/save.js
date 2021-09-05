@@ -11,7 +11,7 @@ module.exports = function (req, res, url) {
 
 		var body = Buffer.from(data.body_zip, 'base64');
 		var thumb = data.thumbnail_large && Buffer.from(data.thumbnail_large, 'base64');
-		movie.save(body, thumb, data.starterId || data.presaveId, data.presaveId).then(nId => res.end('0' + nId));
+		starter.save(body, thumb, data.starterId || data.presaveId, data.presaveId).then(nId => res.end('0' + nId));
 	});
 	return true;
 }
